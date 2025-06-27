@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvPlayerRank"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="1." />
+
+    <ImageView
+        android:id="@+id/ivPlayerPhoto"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@id/tvPlayerRank"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvPlayerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/ivPlayerPhoto"
+        app:layout_constraintEnd_toStartOf="@+id/tvGoals"
+        app:layout_constraintTop_toTopOf="@id/ivPlayerPhoto"
+        tools:text="Nombre Muy Largo del Jugador" />
+
+    <ImageView
+        android:id="@+id/ivScorerTeamLogo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@id/ivPlayerPhoto"
+        app:layout_constraintTop_toBottomOf="@id/tvPlayerName"
+        app:layout_constraintBottom_toBottomOf="@id/ivPlayerPhoto"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvScorerTeamName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textAppearance="?attr/textAppearanceListItemSecondary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/ivScorerTeamLogo"
+        app:layout_constraintEnd_toStartOf="@+id/tvGoals"
+        app:layout_constraintTop_toBottomOf="@id/tvPlayerName"
+        app:layout_constraintBottom_toBottomOf="@id/ivPlayerPhoto"
+        tools:text="Nombre del Equipo" />
+
+    <TextView
+        android:id="@+id/tvGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="25" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

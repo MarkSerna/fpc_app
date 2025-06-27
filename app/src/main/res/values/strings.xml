@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Futbol Colombiano</string>
+    <string name="league_details_title_default">Detalles de Competición</string>
+    <!-- Puedes añadir más strings aquí a medida que los necesites -->
+</resources>
